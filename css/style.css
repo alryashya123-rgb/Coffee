@@ -1,0 +1,168 @@
+•	{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+    Font-family: Arial;
+  }
+  
+  Body {
+    Background: #f7dede;
+  }
+  
+  Header {
+    Display: flex;
+    Justify-content: space-between;
+    align-items: center;
+    Padding: 20px 60px ;
+    Background: #3b0f1a;
+    Color: white;
+  }
+ .logo{
+font-size: 22px;
+font-weight: bold;}
+  nav a {
+    Color: white;
+    Margin-left: 25px;
+    Text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 990px;
+    font-size: 15px;
+    transition:all 0.3s ease;
+  }
+  nav a:hover{
+background-color: #f5a623;
+color:white;
+box-shadow: 0 6px 18px rgba(244,162,44,0.35);
+  }
+  .hero {
+    Display: flex;
+    Align-items: center;
+    Justify-content: space-between;
+    Padding: 80px;
+    Background: #3b0f1a;
+    Color: white;
+    Min-height: 90vh;
+    gap: 30px;
+  }
+  
+  .hero img {
+   max-width: 100%;
+   height: auto;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) ;
+    background: transparent ;
+  }
+  
+  H3 {
+    Color: orange;
+  }
+  
+  .buttons {
+    Margin-top: 20px;
+  }
+  
+  .btn {
+    Padding: 12px 25px;
+    Border-radius: 30px;
+    Border: 1px solid white;
+    Color: white;
+    Text-decoration: none;
+    Margin-right: 10px;
+  }
+  .btn:hover{
+background: orange;
+color: white;
+  }
+  .primary {
+    Background: orange;
+    Border: none;
+  }
+  .primary:hover{
+background: transparent;
+border: 1px solid white;
+color: white;
+
+  }
+  Footer {
+    Text-align: center;
+    Padding: 15px;
+    Background: #2a0b12;
+    Color: white;
+  }
+  #menu-toggle{
+    display: none;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: 40px 20px;
+      
+    }
+    
+    .hero .image {
+      order: 1;
+    }
+    .hero .image img{
+      Width: 250px;
+      margin-bottom: 20px;
+    }
+    .hero .text{
+      order: 2;
+    }
+    .hero .buttons{
+display: flex;
+justify-content: center;
+gap: 15px;
+
+    }
+    nav{
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 250px;
+      height: 100vh;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 20px;
+      transition: 0.3s;
+    }
+    nav a{
+color: black;
+margin: 15px 0;
+font-size: 18px;
+    }
+    .menu-btn{
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: #2a0b12;
+      z-index: 3000;
+      right: 20px;
+      top: 20px;
+      position: fixed;
+     display: block;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+    .menu-btn.close{
+      display: none;
+        }
+    #menu-toggle:checked ~ .menu-btn.open{
+  display: none;
+    }
+    #menu-toggle:checked ~ .menu-btn.close{
+  display: block;
+    }
+   #menu-toggle:checked ~ nav{
+     right: 0;}
+   }
+  
+
+  
+  
+  
